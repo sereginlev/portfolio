@@ -1,0 +1,84 @@
+@import 'scss/libs/variables.scss';
+@import 'scss/libs/mixins.scss';
+
+.contacts {
+	padding: 100px;
+	background-color: $lightBlue;
+
+	@media (max-width: 992px) {
+		padding: 70px;
+	}
+
+	@media (max-width: 767px) {
+		padding: 50px;
+	}
+
+	@media (max-width: 480px) {
+		padding: 30px;
+	}
+}
+
+.title {
+	@include text-styles(50px, 900, $darkBlue);
+}
+
+.description {
+	@include text-styles(20px, 400, $darkBlue, ('Lato', 'sans-serif'));
+	margin-top: 20px;
+}
+
+.block {
+	display: flex;
+	margin-top: 40px;
+
+	@media (max-width: 630px) {
+		flex-direction: column;
+	}
+
+	@media (max-width: 480px) {
+		margin-top: 20px;
+	}
+}
+
+.item {
+	display: flex;
+	align-items: center;
+
+	i {
+		@include icon-styles(40px, $orange);
+		padding: 20px;
+		background-color: #fff;
+		box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+		border-radius: 50%;
+
+		@media (max-width: 992px) {
+			padding: 15px;
+		}
+
+		@media (max-width: 480px) {
+			padding: 10px;
+		}
+	}
+
+	&:not(:first-child) {
+		margin-left: 60px;
+
+		@media (max-width: 630px) {
+			margin-left: 0;
+			margin-top: 10px;
+		}
+	}
+}
+
+.info {
+	margin-left: 20px;
+}
+
+.subtitle {
+	@include text-styles(30px, 500, $darkBlue);
+}
+
+.text {
+	@include text-styles(22px, 400, $darkBlue);
+	margin-top: 5px;
+}

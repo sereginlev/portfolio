@@ -1,0 +1,27 @@
+@import 'scss/libs/variables.scss';
+@import 'scss/libs/mixins.scss';
+
+.projects {
+	padding: 100px 100px;
+	
+	@media (max-width: 992px) {
+		padding: 70px;
+	}
+
+	@media (max-width: 767px) {
+		padding: 50px;
+	}
+
+	@media (max-width: 480px) {
+		padding: 30px;
+	}
+}
+
+.title {
+	@include text-styles(50px, 900, $darkBlue);
+}
+
+.text {
+	@include text-styles(20px, 400, $darkBlue, ('Lato', 'sans-serif'));
+	margin-top: 20px;
+}

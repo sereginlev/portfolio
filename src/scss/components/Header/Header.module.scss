@@ -1,0 +1,41 @@
+@import 'scss/libs/variables.scss';
+@import 'scss/libs/mixins.scss';
+
+.header {
+	position: fixed;
+	width: 50%;
+	height: 100vh;
+	background-image: url('../../../assets/header.jpg');
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 100px 100px 0 100px;
+	animation: bg 1s 0.5s alternate;
+
+	@media (max-width: 1200px) {
+		position: relative;
+		width: 100%;
+	}
+
+	@media (max-width: 992px) {
+		padding: 70px 70px 0 70px;
+	}
+
+	@media (max-width: 767px) {
+		padding: 50px 50px 0 50px;
+	}
+}
+
+@keyframes bg {
+	0% {
+		width: 100%;
+		position: absolute;
+		z-index: 2;
+	}
+
+	100% {
+		position: fixed;
+		width: 50%;
+		z-index: 1;
+	}
+}

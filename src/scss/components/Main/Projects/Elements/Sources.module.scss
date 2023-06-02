@@ -1,0 +1,34 @@
+@import 'scss/libs/variables.scss';
+@import 'scss/libs/mixins.scss';
+
+.sources {
+	display: flex;
+	justify-content: space-around;
+
+	@media (max-width: 767px) {
+		margin-top: 10px;
+	}
+}
+
+.item {
+	cursor: pointer;
+
+	i {
+		@include icon-styles(25px, $orange);
+	}
+}
+
+.link {
+	@include text-styles(24px, 500, $orange);
+	text-decoration: underline;
+	cursor: pointer;
+	margin-left: 5px;
+
+	&:hover {
+		color: $orange;
+	}
+
+	&:active {
+		opacity: 0.8;
+	}
+}

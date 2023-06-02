@@ -1,0 +1,23 @@
+@import 'scss/libs/variables.scss';
+@import 'scss/libs/mixins.scss';
+
+.social {
+	display: block;
+}
+
+.text {
+	&:not(:first-child) {
+		margin-top: 10px;
+	}
+
+	@include text-styles(20px, $regular, $lightBlue);
+}
+
+.link {
+	color: $orange;
+	text-decoration: underline;	
+
+	&:hover {
+		text-decoration: none;
+	}
+}
