@@ -19,6 +19,7 @@
 	padding: 10px;
 	background-color: $orange;
 	border-radius: 5px;
+	cursor: grab;
 	
 	&:not(:first-child) {
 		margin-left: 20px;

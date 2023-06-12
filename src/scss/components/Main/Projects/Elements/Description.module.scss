@@ -4,6 +4,7 @@
 .description {
 	display: block;
 
+
 	@media (max-width: 480px) {
 		height: 70px;
 	}
@@ -11,10 +12,12 @@
 
 .title {
 	@include text-styles(30px, 500, $yellow);
+	cursor: grab;
 }
 
 .text {
 	@include text-styles(22px, 400, $yellow, ('Lato', sans-serif));
 	margin-top: 20px;
 	min-height: 80px;
+	cursor: grab;
 }

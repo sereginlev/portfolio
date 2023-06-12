@@ -26,22 +26,6 @@
 		transition: all 3s ease;
 	}
 
-	&:hover {
-		transform: scale(1.1);
-		background-size: 150%;
-		
-		.text {
-			@include text-styles(30px, $semiBold, $darkBlue);
-			transform: scale(1.1);
-		}
-
-		i {
-			font-size: 45px;
-			color: $darkBlue;
-			transform: scale(1.1);
-		}
-	}
-
 	@media (max-width: 1400px) {
 		padding: 40px;
 	}
