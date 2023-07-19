@@ -6,7 +6,7 @@ function Contacts() {
 	return (
 		<section className={styles.contacts} id='contacts'>
 			<h2 className={styles.title}>Contact me</h2>
-			<p className={styles.description}>Now I live in Belgrade, Serbia. Ready to consider any option of relocation.</p>
+			<p className={styles.description}>Now I live in Volgorad, Russia. Ready to consider any option of relocation.</p>
 
 			<ul className={styles.block}>
 				<li className={styles.item}>
