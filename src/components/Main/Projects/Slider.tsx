@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { useSelector } from 'react-redux';
+import { useAppSelector } from 'hook';
 
 import styles from 'scss/components/Main/Projects/Slider.module.scss';
 
@@ -8,14 +8,14 @@ import Description from './Elements/Description';
 import Technologies from './Elements/Technologies';
 import Sources from './Elements/Sources';
 
-function Slider() {
+const Slider: React.FC = () => {
 	const [width, setWidth] = React.useState(0);
-	const slider = React.useRef();
+	const slider = React.useRef<HTMLDivElement>(null);
 
-	const { projects } = useSelector(state => state.projects);
+	const { projects } = useAppSelector(state => state.projects);
 
 	React.useEffect(() => {
-		setWidth(slider.current.scrollWidth - slider.current.offsetWidth);
+		setWidth(slider.current!.scrollWidth - slider.current!.offsetWidth);
 	}, [])
 
 	return (

@@ -3,7 +3,7 @@ import React from 'react';
 import styles from 'scss/components/Main/Projects/Projects.module.scss';
 import Slider from './Slider';
 
-function Projects() {
+const Projects: React.FC = () => {
   return (
 	 <section className={styles.projects} id='projects'>
 			<h2 className={styles.title}>My projects.</h2>

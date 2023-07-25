@@ -2,7 +2,7 @@ import React from 'react';
 
 import styles from 'scss/components/Main/Stack/Technologies.module.scss';
 
-function Technologies() {
+const Technologies: React.FC = () => {
 
 	return (
 		<ul className={styles.technologies}>
@@ -27,7 +27,7 @@ function Technologies() {
 				<p className={styles.text}>SASS</p>
 			</li>
 			<li className={styles.item}>
-				<i class="fa-brands fa-skyatlas"></i>
+				<i className="fa-brands fa-skyatlas"></i>
 				<p className={styles.text}>Redux Toolkit</p>
 			</li>
 		</ul>

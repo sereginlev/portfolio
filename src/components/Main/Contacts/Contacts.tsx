@@ -2,7 +2,7 @@ import React from 'react';
 
 import styles from 'scss/components/Main/Contacts/Contacts.module.scss';
 
-function Contacts() {
+const Contacts: React.FC = () => {
 	return (
 		<section className={styles.contacts} id='contacts'>
 			<h2 className={styles.title}>Contact me</h2>

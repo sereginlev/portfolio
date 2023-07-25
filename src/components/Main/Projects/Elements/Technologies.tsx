@@ -2,7 +2,11 @@ import React from 'react';
 
 import styles from 'scss/components/Main/Projects/Elements/Technologies.module.scss';
 
-function Technologies({ technologies }) {
+type TechnologiesProps = {
+	technologies: string[];
+}
+
+const Technologies: React.FC<TechnologiesProps> = ({ technologies }) => {
 
 	return (
 		<ul className={styles.technologies}>

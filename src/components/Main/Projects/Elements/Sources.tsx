@@ -2,7 +2,11 @@ import React from 'react';
 
 import styles from 'scss/components/Main/Projects/Elements/Sources.module.scss';
 
-function Sources({ sources }) {
+type SourcesProps = {
+	sources: string[];
+}
+
+const Sources: React.FC<SourcesProps> = ({ sources }) => {
 	return (
 		<ul className={styles.sources}>
 			<li className={styles.item}>

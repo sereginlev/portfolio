@@ -4,7 +4,7 @@ import styles from 'scss/components/Header/Header.module.scss';
 import Hero from './Hero';
 import Social from './Social';
 
-function Header() {
+const Header: React.FC = () => {
 	return (
 		<header className={styles.header}>
 			<Hero />

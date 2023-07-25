@@ -1,8 +1,8 @@
-import { React } from 'react';
+import React  from 'react';
 
 import styles from 'scss/components/Header/Social.module.scss';
 
-function Social() {
+const Social: React.FC = () => {
 	return (
 		<article className={styles.social}>
 			<p className={styles.text}>

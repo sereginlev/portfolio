@@ -2,7 +2,7 @@ import React from 'react';
 
 import styles from 'scss/components/Main/About.module.scss';
 
-function About() {
+const About: React.FC = () => {
 
 	return (
 		<section className={styles.about}>

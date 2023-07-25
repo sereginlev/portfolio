@@ -2,7 +2,7 @@ import React from 'react';
 
 import styles from 'scss/components/Header/Hero.module.scss';
 
-function Hero() {
+const Hero: React.FC = () => {
 
 	return (
 		<article className={styles.hero}>

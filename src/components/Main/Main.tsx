@@ -7,7 +7,7 @@ import Stack from './Stack/Stack';
 import Projects from './Projects/Projects';
 import Contacts from './Contacts/Contacts';
 
-function Main() {
+const Main: React.FC = () => {
   return (
 	 <section className={styles.main}>
 		<div className={styles.photo}>

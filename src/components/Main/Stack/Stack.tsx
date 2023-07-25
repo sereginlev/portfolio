@@ -3,7 +3,7 @@ import React from 'react';
 import styles from 'scss/components/Main/Stack/Stack.module.scss';
 import Technologies from './Technologies';
 
-function Stack() {
+const Stack: React.FC = () => {
 
 	return (
 		<section className={styles.stack}>
